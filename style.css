@@ -12,10 +12,12 @@ header {
     text-align: center;
 }
 
+/* Style header h1 */
 header h1 {
-    font-size: 24px;
+    font-size: 32px;
 }
 
+/* Style navigation */
 nav ul {
     list-style-type: none;
 }
@@ -35,10 +37,12 @@ main {
     padding: 20px;
 }
 
+/* Style sections */
 section {
     margin-bottom: 20px;
 }
 
+/* Style section headings */
 h2 {
     font-size: 20px;
     margin-bottom: 10px;
