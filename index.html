@@ -1,45 +1,77 @@
+<!-- Rishi Shetty - May 3, 2024 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata section -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <!-- Link to external CSS file -->
+    <title>Rishi Shetty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/Plane.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header section -->
     <header>
-        <h1>Welcome to My Personal Website</h1>
-        <!-- Navigation section -->
         <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#" class = "logo"><div class="rec"></div>RISHI SHETTY</a>
+            <div class="nav-right">
+                <a href="Rishi Shetty Resume.pdf" target="_blank"><span class="resume-box">RESUME</span> <img src="images/pencil.png" alt="pencil icon"></a>
+            </div>
         </nav>
     </header>
-    <!-- Main content section -->
     <main>
-        <!-- About Me section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This is where you can introduce yourself and provide some information about who you are, what you do, and what you're passionate about.</p>
-        </section>
-        <!-- Portfolio section -->
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Here you can showcase your projects, work samples, or any other accomplishments you want to highlight.</p>
-        </section>
-        <!-- Contact section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can provide contact information or a contact form for visitors to reach out to you.</p>
-        </section>
+        <div class="wrapper-content">
+            <div class="landing">
+                <div class="left">
+                    <div class="line"></div>
+                    <h1>Rishi Shetty</h1>
+                    <h2>University of Michigan</h2>
+                    <p>Hi, my name is Rishi! I am a junior studying Aerospace Engineering and Computer Science at the University of Michigan. I am particularly interested in working with aircraft, focusing on propulsion and aerodynamics. In the summer, I will be working as a systems test intern for the US Navy in Virginia.</p>
+                    <div class="rec-large"></div>
+                </div>
+                <div class="right">
+                    <img src="images/rishi_headshot_t.png" alt="Headshot" class="oval-cutout">
+                </div>
+            </div>
+            <div class="contact">
+                <a href="https://github.com/rvshetty22/rvshetty22.github.io" target="_blank"><img src="images/github_icon_t.png" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/rishi-shetty/" target="_blank"><img src="images/linked_in_icon_t.png" alt="LinkedIn"></a>
+                <a href="mailto:rvshetty@umich.edu" target="_blank"><img src="images/email_icon_t.png" alt="Email"></a>
+            </div>
+            <div class="section2">
+                <div class="About">
+                    <div class="About_text">
+                        <h3>About Me<h3>
+                        <p>When I'm not buried in homework, you'll find me on the tennis court, enjoying quality time with friends, or contributing to the student project team M-Fly.</p>
+                    </div>
+                    <div class="row0">
+                        <img src="images/elite.jpg" alt="Elite" class="Elite">
+                        <img src="images/friends.jpg" alt="Friends" class="Friends">
+                        <img src="images/mfly.jpeg" alt="mfly" class="mfly">
+                    </div>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="Portfolio">
+                    <div class="Portfolio_text">
+                        <h3>Portfolio</h3>
+                        <p>Through my classes, student project teams, and personal projects, I have worked on furthering my engineering skills. As the M-Fly Autonomous Aerodynamics Lead, I designed our team's first elliptical wing planform in AVL, conducted aerodynamic analysis through CFD generated drag polars, and wrote MATLAB code determining an optimal parachute deployment height for a 5-stage descent of our payload. For my Engr 100 final project (Asteroid Deflection Mission) I worked on orbital design in STK and for fun created a 3d printable 1/12th-scale model of the space shuttle in Autodesk Inventor.</p>
+                    </div>
+                    <div class="row1">
+                        <img src="images/Elliptical Wing.png" alt="Elliptical Wing" class="Wing">
+                        <img src="images/mat-5 drag polar.png" alt="Drag Polar" class="Polar">
+                    </div>
+                    <div class="row2">
+                        <img src="images/Parchute Release.jpg" alt="Parachute Release" class="Parachute">
+                        <img src="images/Odegra Path.png" alt="Odegra" class="Odegra">
+                    </div>
+                    <div class="row3">
+                        <img src="images/Space Shuttle Model.png" alt="Space Shuttle" class="Shuttle">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Rishi Shetty</p>
     </footer>

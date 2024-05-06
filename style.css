@@ -1,57 +1,306 @@
-/* Reset some default browser styles */
-body, h1, h2, p, ul, li {
+/* Rishi Shetty - May 3, 2024*/
+
+* {
     margin: 0;
+    border: 0;
     padding: 0;
+    font-size: 100%;
+    outline: 0;
+    vertical-align: baseline;
 }
 
-/* Style header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+:root {
+    --black: #000000;
+    --gray: #899499;
+    --light-gray: #E7E7E8;
+    --background: #f0f0f0;
+    --blue: #0437F2;
+    --light-blue: #6495ED;
+    --white: #FFFFFF;
+    --yellow: #FFEA00;
+    --light-yellow: #FFFF8F;
+    --maize: #ffcb05;
+    --navy: #00274c;
 }
 
-/* Style header h1 */
-header h1 {
-    font-size: 32px;
+html {
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Style navigation */
-nav ul {
-    list-style-type: none;
+html,body{
+    width: 100%;
+    height: 100%;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+body{
+    background-color: var(--background);
 }
 
-nav ul li a {
-    color: #fff;
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--black);
+}
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--black);
+}
+h3{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--black);
+}
+p {
+    font-size: 17px;
+    color: var(--gray);
+}
+a {
+    font-size: 17px;
+    color: var(--gray);
     text-decoration: none;
 }
 
-/* Style main content */
-main {
-    padding: 20px;
+.wrapper-content{
+    width: 70%;
+    margin: 0 auto;
 }
 
-/* Style sections */
-section {
-    margin-bottom: 20px;
+nav {
+    position: fixed;
+    top: 50px;
+    left: 5%;
+    line-height: 50px;
+    width: 100%;
+    list-style-type: none;
+    z-index: 1000;
+}
+nav a{
+    font-weight: 500;
+    color: var(--black);
+}
+.nav-right{
+    position: fixed;
+    right: 5%;
+    top: 50px;
+}
+.nav-right a{
+    color: var(--white);
+    
+}
+.nav-right a > img{
+    vertical-align: middle;
+    height: 30px;
+    padding-left: 15px;
 }
 
-/* Style section headings */
-h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.rec{
+    background-color: var(--navy);
+    display: inline-block;
+    width: 7px;
+    height: 14px;
+    margin-right: 3px;
 }
 
-/* Style footer */
+.resume-box {
+    display: inline-block;
+    padding: 0px 15px;
+    background-color: var(--navy);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.landing{
+    margin-top: 100px;
+    display: flex;
+}
+
+.left{
+    flex: 1;
+    margin-top: 150px;
+    position: relative;
+}
+
+.right{
+    flex: 1;
+    margin-top: 30px;
+    position: relative;
+    padding-left: 300px;
+}
+
+.right > img{
+    position: relative;
+}
+
+.left p{
+    width: 400px;
+}
+
+.rec-large{
+    background-color: var(--maize);
+    height: 150px;
+    width: 500px;
+    position: absolute;
+    top:-45px;
+    left: -80px;
+    z-index: -1;
+}
+
+.line{
+    height: 3px;
+    width: 120px;
+    background-color: var(--black);
+    position: absolute;
+    top: 30px;
+    left:-140px;
+}
+
+.oval-cutout {
+    width: 300px; 
+    height: 450px;
+    position: absolute;
+    border-radius: 50%; 
+    overflow: hidden; 
+    background-color: var(--white);
+    outline: 4px solid var(--black);
+}
+
+.contact {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
+}
+
+.contact a > img{
+    margin: 0 25px; 
+    max-height: 40px; 
+    filter: brightness(0%) invert(13%) sepia(16%) saturate(6141%) hue-rotate(186deg) brightness(97%) contrast(105%);
+}
+
+.section2{
+    display: flex;
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+
+.About_text h3{
+    text-align: center;
+}
+
+.About_text p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.row0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Elite {
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.Friends {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 25px;
+}
+
+.mfly {
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-left: 25px;
+}
+
+
+.section3{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.Portfolio_text h3{
+    text-align: center;
+}
+
+.Portfolio_text p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Wing {
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.Parachute {
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.Polar {
+    margin-left: 50px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Parachute{
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.Odegra{
+    margin-left: 50px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Shuttle{
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 footer {
-    background-color: #333;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black);
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+footer p{
+    color: var(--white)
 }
