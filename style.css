@@ -59,11 +59,12 @@ a {
 }
 
 .wrapper-content{
-    width: 70%;
+    /* width: 70%; */
     margin: 0 auto;
 }
 
 nav {
+    width: 70%;
     position: fixed;
     top: 50px;
     left: 5%;
@@ -120,37 +121,15 @@ nav a{
 .landing{
     margin-top: 100px;
     display: flex;
+    justify-content: center;
 }
 
 .left{
     flex: 1;
     margin-top: 150px;
     position: relative;
-}
-
-.right{
-    flex: 1;
-    margin-top: 30px;
-    position: relative;
-    padding-left: 300px;
-}
-
-.right > img{
-    position: relative;
-}
-
-.left p{
-    width: 400px;
-}
-
-.rec-large{
-    background-color: var(--maize);
-    height: 150px;
-    width: 500px;
-    position: absolute;
-    top:-45px;
-    left: -80px;
-    z-index: -1;
+    display: flex;
+    justify-content: center;    
 }
 
 .line{
@@ -159,7 +138,47 @@ nav a{
     background-color: var(--black);
     position: absolute;
     top: 30px;
-    left:-140px;
+    left: 140px;
+}
+
+.rec-large{
+    background-color: var(--maize);
+    height: 150px;
+    width: 500px;
+    position: absolute;
+    top:-45px;
+    left: 200px;
+    z-index: -1;
+}
+
+.left h1{
+    position: absolute;
+    left: 275px;
+}
+
+.left h2{
+    position: absolute;
+    top: 55px;
+    left: 275px;
+}
+
+.left p{
+    position: absolute;
+    width: 400px;
+    top: 110px;
+    left: 275px;
+}
+
+.right{
+    flex: 1;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.right > img{
+    position: relative;
 }
 
 .oval-cutout {
@@ -203,9 +222,12 @@ nav a{
 }
 
 .section2{
+    width: 100%;
+    background-color: var(--light-gray);
     display: flex;
     margin-top: 125px;
     padding-bottom: 100px;
+    justify-content: center;
 }
 
 .About_text h3{
@@ -244,10 +266,15 @@ nav a{
     margin-left: 25px;
 }
 
-
 .section3{
     display: flex;
     padding-bottom: 75px;
+}
+
+.Portfolio_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Portfolio_text h3{
@@ -257,6 +284,7 @@ nav a{
 .Portfolio_text p{
     text-align: center;
     margin-bottom: 25px;
+    max-width: 70%;
 }
 .row1{
     margin-top: 50px;
@@ -283,6 +311,7 @@ nav a{
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
 .row2{
     display: flex;
     justify-content: center;
@@ -311,7 +340,14 @@ nav a{
 }
 
 .Shuttle{
-    width: 500px;
+    width: 475px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.ASSETT{
+    margin-left: 50px;
+    width: 475px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
